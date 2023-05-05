@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Show</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="questions">Questions</h2>
+        <div class="question-area">
+            <ul>
+                <li>
+                    <label for="one">A</label>
+                    <button id="1" class="answer_btn">Choise 1</button>
+                </li>
+                <li>
+                    <label for="two">B</label>
+                    <button id="2" class="answer_btn">Choise 2</button>
+                </li>
+                <li>
+                    <label for="three">C</label>
+                    <button id="3" class="answer_btn">Choise 3</button>
+                </li>
+                <li>
+                    <label for="four">D</label>
+                    <button id="4" class="answer_btn">Choise 4</button>
+                </li>
+            </ul>
+        </div>
+        <div class="result">
+            <label for="question">Question</label>
+            <input id="question" type="range" value="0" min="0" max="10" >
+            <label for="score">Score</label>            
+            <h2 id="score">0</h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
